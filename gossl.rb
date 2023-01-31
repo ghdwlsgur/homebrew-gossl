@@ -5,20 +5,20 @@
 class Gossl < Formula
   desc "An interactive cli tool that easily binds HTTPS certificates and diagnoses whether certificates are applied with edge servers as proxy."
   homepage ""
-  version "1.2.10"
+  version "1.2.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.10/gossl_1.2.10_Darwin_arm64.tar.gz"
-      sha256 "fc8211a30365a7f42366b5de0978e1a7157984fb393a1e0fbd2cb5338702f439"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.11/gossl_1.2.11_Darwin_arm64.tar.gz"
+      sha256 "2ec2f41ba3d63aea852973a234317be2cf11a4acda9cec551f584e37249ce998"
 
       def install
         bin.install "gossl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.10/gossl_1.2.10_Darwin_x86_64.tar.gz"
-      sha256 "4459b8645e9f6bfc4a77265a34d7ab16e3680ffe7ee92a294aa7278577c16344"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.11/gossl_1.2.11_Darwin_x86_64.tar.gz"
+      sha256 "d63c9119f36f40198ff90dd57d5456ac35657294d05559226f5cbf63ad8017c2"
 
       def install
         bin.install "gossl"
@@ -28,16 +28,16 @@ class Gossl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.10/gossl_1.2.10_Linux_arm64.tar.gz"
-      sha256 "ede1a64a5632d71af17a0a181a30a7eae192f64f6317935d892dc6f7ad4f6bf3"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.11/gossl_1.2.11_Linux_arm64.tar.gz"
+      sha256 "c1165190bd36da374bc67120f5afb2bbb18614f73bff5602607020d71d9e7866"
 
       def install
         bin.install "gossl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.10/gossl_1.2.10_Linux_x86_64.tar.gz"
-      sha256 "511376b751fdef273ccba4c1ae885e0858c2ff8e9bf0be059848f6e32116d3b5"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.2.11/gossl_1.2.11_Linux_x86_64.tar.gz"
+      sha256 "2ed2dd786f839996fe1c5d51d220e569c49a22b6f1b5943335693e4d30fb44bd"
 
       def install
         bin.install "gossl"
