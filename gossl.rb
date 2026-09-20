@@ -5,20 +5,20 @@
 class Gossl < Formula
   desc "interactive CLI tool that helps to check and process the information of certificate and private key files, making it easy to apply the certificate to a web server"
   homepage "https://github.com/ghdwlsgur/gossl"
-  version "1.6.0"
+  version "1.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.6.0/gossl_1.6.0_Darwin_x86_64.tar.gz"
-      sha256 "06afe2511b153fe5784d0c6bc8de30d64115c659f79eb9beddcf5307deb1427d"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.7.0/gossl_1.7.0_Darwin_x86_64.tar.gz"
+      sha256 "4a6a30d9af85aab4166465085adea4b12b4b7d09acbf56e99ef8bd82553013cf"
 
       define_method(:install) do
         bin.install "gossl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.6.0/gossl_1.6.0_Darwin_arm64.tar.gz"
-      sha256 "66e8e466aafd40097f5d0bfe44d7f25cfb192a37f4b6db8bd1a500f793a553fa"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.7.0/gossl_1.7.0_Darwin_arm64.tar.gz"
+      sha256 "42f1555200c8d6cbca40e86b62a0e70e144539c91f06c7ed609e12d2c2f4f9a3"
 
       define_method(:install) do
         bin.install "gossl"
@@ -28,15 +28,15 @@ class Gossl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.6.0/gossl_1.6.0_Linux_x86_64.tar.gz"
-      sha256 "d52d08d206bc6fb36c95bc4748948d40eaabbf2bc201c65d9bc9b1e4d536d2ff"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.7.0/gossl_1.7.0_Linux_x86_64.tar.gz"
+      sha256 "c864ac4d9b783630392667fb78b7fed4bfb6f408837dd82d2785e4c9e6efb600"
       define_method(:install) do
         bin.install "gossl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.6.0/gossl_1.6.0_Linux_arm64.tar.gz"
-      sha256 "793e868be86bbcbb96c6e1787501fda3ec83388e29ac3b36667db84aca98b10a"
+      url "https://github.com/ghdwlsgur/gossl/releases/download/v1.7.0/gossl_1.7.0_Linux_arm64.tar.gz"
+      sha256 "aed5b522c44a600ded7501c8e2fbd1c42b9bc84a49f26af1add4c1cebad70cf7"
       define_method(:install) do
         bin.install "gossl"
       end
