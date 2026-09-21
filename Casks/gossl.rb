@@ -24,7 +24,7 @@ cask "gossl" do
   end
 
   name "gossl"
-  desc "interactive CLI tool that helps to check and process the information of certificate and private key files, making it easy to apply the certificate to a web server"
+  desc "Split, merge and inspect TLS certificate files, interactively or in a pipeline"
   homepage "https://github.com/ghdwlsgur/gossl"
 
   livecheck do
